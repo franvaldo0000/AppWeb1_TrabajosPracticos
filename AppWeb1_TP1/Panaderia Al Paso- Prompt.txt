@@ -1,0 +1,110 @@
+Prompt tp 1:
+
+Actúa como un diseñador de producto UX/UI. Estoy realizando un proyecto "Panaderia Al Paso" (Es una panadería que vende productos panificados como chipa, medialunas, etc.) cuyo objetivo es digitalizar su catalogo de productos, permitir el registro de clientes, la compra online de sus productos, realizar ventas online utilizando medios de pago .
+
+
+Consignas:
+
+1.Descubrimiento y ficha técnica del producto
+
+- Datos del cliente: Nombre / Marca / Empresa, objetivo del negocio y modelo de "monetización/valor" mínimo del caso seleccionado.
+
+- Objetivos del proyecto web: Explicar qué busca lograr el
+negocio con esta plataforma digital.
+
+- Descripción del producto web y modelo de negocio mínimo:
+Explicar brevemente qué resuelve la web y cómo genera
+valor o ingresos (ej. venta B2C, reservas, catálogo
+interactivo).
+
+2.Proto-persona e historias de usuario:
+
+- Crear 1 proto-persona (perfil simplificado del usuario
+ideal) que contenga:
+○ Perfil (Nombre/Edad/Ocupación/Dispositivo principal y otros dispositivos).
+○ Comportamiento y hábitos
+○ Objetivos y necesidades
+○ Frustraciones
+
+
+- Redactar 2 Historias de Usuario basadas en esa misma
+Proto-Persona (1 orientada a su objetivo/necesidad y
+1 a resolver una frustración o punto de dolor) siguiendo la estructura "Como [usuario], quiero [acción] para [beneficio]" 
+
+- Flujo de usuario (User Flow): Diagramar el paso a paso gráfico que realiza el usuario
+desde que ingresa al sitio hasta completar la acción del
+carrito de compras.
+ Ejemplo: Inicio → Catálogo → Selección de producto → Carrito → Confirmación
+
+- Requerimientos funcionales frontend:
+Listar las funcionalidades interactivas de la interfaz
+necesarias para cumplir con el flujo anterior (ej. menú
+responsive, carrito desplegable, validación de formularios, etc.).
+
+Debe incluir:
+○ Carro de compras ciclo completo, envío y confirmación de
+pedido/compra.
+○ Filtros de búsqueda
+○ Formulario web: Utilizado para consulta, reservas, pedidos, etc.
+
+
+Funciono.
+Ahora estoy realizando una MPA/SPA y Wireframes para la aplicación web.
+"Actúa como un arquitecto de software web. Tengo un proyecto de la Aplicacion web para la panaderia "Al Paso". Dime que secciones deberían ser MPA y cuáles SPA, justificando el impacto en la experiencia de usuario y el rendimiento."
+
+Consignas:
+ 1.Arquitectura de la información
+
+- Sitemap (Mapa del sitio): Diagrama que muestre la
+estructura jerárquica de páginas y secciones del sitio.
+
+- Estrategia de navegación (MPA / SPA):
+
+     ○ Indicar qué secciones funcionarán de forma
+tradicional MPA (Multi-Page Application) para
+favorecer la estructura y SEO.
+
+     ○ Indicar qué módulos tendrán comportamiento SPA
+(Single-Page Application) para mejorar la
+interactividad (por ejemplo, el catálogo interactivo o el
+carrito de compras).
+
+
+
+2.Diseño de interfaz (UX / UI)
+
+- Bocetos a mano : Dibujos rápidos en papel para definir la
+disposición general de los elementos.
+
+- Wireframes: Estructura digital en escala de grises sobre
+grillas reales con medidas relativas a pantalla (Desktop
+1440px / Mobile 375px).
+
+- Mockup : Diseño visual final aplicado con colores, tipografías
+reales e imágenes en software de edición (ej. Figma).
+
+Nota: Deben incluir como mínimo las 3 secciones/vistas
+principales en sus versiones Escritorio y Móvil.
+
+
+Funciono.
+Ahora desarrollaremos la Infraestructura web y dominio.
+
+Consignas:
+- Selección de dominio: Proponer el nombre de dominio deseado para el proyecto. "Dame 10 opciones de nombres de dominio cortos, memorables y profesionales para la panadería "Al Paso" en Argentina. Incluye opciones con terminación .com y .com.ar."
+
+-Dominio propuesto: Indicar la dirección elegida (ej.
+eldominio.com o .com.ar).
+
+- Registro / Plataforma: Enlace a la empresa proveedora
+elegida para la verificación de disponibilidad (ej. NIC
+Argentina, Namecheap, DonWeb) y documentar el precio anual estimado.
+
+- Justificación: Explicar el tipo de TLD seleccionado y
+por qué beneficia al proyecto.
+Ejemplo: .com vs .com.ar vs. .app.
+
+Elige la mejor opción de las 3 TLDs(.com, .com.ar, .app.) y Explicar el tipo de TLD seleccionado, porque lo elejiste y por qué beneficia al proyecto.
+
+
+

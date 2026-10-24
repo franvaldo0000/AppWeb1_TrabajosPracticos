@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panadería Al Paso — Catálogo online, pedidos y retiro rápido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">✷</span>
+      <span class="logo-text">Panadería<em>Al Paso</em></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#categorias">Categorías</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#cuenta">Mi cuenta</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-ghost" id="open-login">Iniciar sesión</button>
+      <button class="cart-toggle" id="open-cart" aria-label="Ver carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" id="open-menu" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MENÚ MÓVIL ============ -->
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menú principal móvil">
+  <div class="mobile-nav-head">
+    <span class="logo-text">Menú</span>
+    <button class="cart-close" id="close-menu" aria-label="Cerrar menú">✕</button>
+  </div>
+  <a href="#categorias">Categorías</a>
+  <a href="#catalogo">Catálogo</a>
+  <a href="#como-funciona">Cómo funciona</a>
+  <a href="#cuenta">Mi cuenta</a>
+  <a href="#pagos">Medios de pago</a>
+  <a href="#ubicacion">Ubicación</a>
+  <button class="btn btn-primary btn-block" id="mobile-login">Iniciar sesión</button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Panadería de barrio · La Calera, Córdoba</p>
+      <h1>Lo de siempre,<br>pedido <span class="hl">al paso.</span></h1>
+      <p class="hero-lead">Chipas, medialunas y pan del día — elegí desde el catálogo online, pagá como quieras y retirá en el mostrador o recibilo en tu casa. Sin filas, sin vueltas.</p>
+      <div class="hero-ctas">
+        <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+        <a href="#cuenta" class="btn btn-outline">Crear cuenta</a>
+      </div>
+      <ul class="hero-trust">
+        <li><span class="dot"></span>Horneado todos los días desde las 6&nbsp;AM</li>
+        <li><span class="dot"></span>Pago online seguro</li>
+        <li><span class="dot"></span>Retiro en 15 minutos</li>
+      </ul>
+    </div>
+
+    <div class="hero-art">
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1550005399-c95f859c0fc7?auto=format&fit=crop&w=1000&q=80" alt="Medialunas recién horneadas en canasto de panadería">
+      </div>
+      <div class="ticket-float">
+        <span class="ticket-float-code">#014</span>
+        <span class="ticket-float-name">Docena de chipas</span>
+        <span class="ticket-float-price">$4.200</span>
+        <span class="stamp">listo</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-divider" aria-hidden="true"></div>
+</section>
+
+<!-- ============ CATEGORÍAS ============ -->
+<section class="categorias" id="categorias">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">El mostrador, ordenado</p>
+      <h2>Buscá por categoría</h2>
+    </div>
+
+    <div class="cat-grid">
+      <a class="cat-card" href="#catalogo" data-filter="facturas">
+        <img src="https://images.unsplash.com/photo-1544027026-31fbbad5ecee?auto=format&fit=crop&w=700&q=80" alt="Medialunas y facturas de manteca">
+        <div class="cat-card-label"><span>Facturas y medialunas</span><em>12 productos</em></div>
+      </a>
+      <a class="cat-card" href="#catalogo" data-filter="chipas">
+        <img src="https://images.unsplash.com/photo-1549438247-223f2db1dd29?auto=format&fit=crop&w=700&q=80" alt="Chipas doradas recién horneadas">
+        <div class="cat-card-label"><span>Chipas y pan de queso</span><em>6 productos</em></div>
+      </a>
+      <a class="cat-card" href="#catalogo" data-filter="panes">
+        <img src="https://images.unsplash.com/photo-1609889132680-4e2ea2befbef?auto=format&fit=crop&w=700&q=80" alt="Panes artesanales del día">
+        <div class="cat-card-label"><span>Panes del día</span><em>9 productos</em></div>
+      </a>
+      <a class="cat-card" href="#catalogo" data-filter="dulces">
+        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=700&q=80" alt="Tortas y postres de pastelería">
+        <div class="cat-card-label"><span>Tortas y postres</span><em>8 productos</em></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATÁLOGO ============ -->
+<section class="catalogo" id="catalogo">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Catálogo digital</p>
+      <h2>Pedido de hoy</h2>
+      <p class="section-sub">Cada producto sale con su ticket de despacho: elegís cantidad, lo agregás al pedido y seguís sumando.</p>
+    </div>
+
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-filter="todos">Todos</button>
+      <button class="tab" data-filter="facturas">Facturas</button>
+      <button class="tab" data-filter="chipas">Chipas</button>
+      <button class="tab" data-filter="panes">Panes</button>
+      <button class="tab" data-filter="dulces">Dulces</button>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+      <!-- Las tarjetas se generan también desde script.js, pero se listan acá como base semántica -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="como-funciona" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head light">
+      <p class="eyebrow">De la app al mostrador</p>
+      <h2>Tres pasos, ida y vuelta</h2>
+    </div>
+
+    <div class="pasos-grid">
+      <div class="paso">
+        <span class="paso-ticket">01</span>
+        <h3>Elegís desde casa</h3>
+        <p>Recorré el catálogo, armá tu pedido y guardá tus productos favoritos en tu cuenta para la próxima vez.</p>
+      </div>
+      <div class="paso">
+        <span class="paso-ticket">02</span>
+        <h3>Pagás online</h3>
+        <p>Mercado Pago, tarjeta, transferencia o efectivo al retirar. Vos elegís, nosotros confirmamos al instante.</p>
+      </div>
+      <div class="paso">
+        <span class="paso-ticket">03</span>
+        <h3>Retirás al paso</h3>
+        <p>Tu pedido te espera con el número de ticket. Pasás, lo mostrás y te vas — o lo pedís con envío a domicilio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUENTA / REGISTRO ============ -->
+<section class="cuenta" id="cuenta">
+  <div class="wrap cuenta-inner">
+    <div class="cuenta-copy">
+      <p class="eyebrow">Tu cuenta Al Paso</p>
+      <h2>Registrate y pedí en dos toques</h2>
+      <p>Con tu cuenta guardás tus direcciones, tu medio de pago preferido y el historial de tus pedidos. La próxima vez, repetís el pedido de siempre en segundos.</p>
+      <ul class="beneficios">
+        <li>Historial de pedidos y repetir compra con un clic</li>
+        <li>Direcciones y datos de envío guardados</li>
+        <li>Promos y horneadas especiales antes que nadie</li>
+      </ul>
+      <div class="cuenta-photo">
+        <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=900&q=80" alt="Estantería de panadería con panes recién horneados">
+      </div>
+    </div>
+
+    <form class="form-card" id="register-form">
+      <div class="form-tab-row">
+        <button type="button" class="form-tab active" data-form="registro">Crear cuenta</button>
+        <button type="button" class="form-tab" data-form="login">Iniciar sesión</button>
+      </div>
+
+      <div class="form-fields" id="fields-registro">
+        <label>Nombre y apellido
+          <input type="text" placeholder="Camila Torres" required>
+        </label>
+        <label>Correo electrónico
+          <input type="email" placeholder="camila@correo.com" required>
+        </label>
+        <label>Teléfono
+          <input type="tel" placeholder="351 000 0000">
+        </label>
+        <label>Contraseña
+          <input type="password" placeholder="Mínimo 8 caracteres" required>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Crear mi cuenta</button>
+        <p class="form-note">Al registrarte aceptás recibir novedades de pedidos y promociones. Podés darte de baja cuando quieras.</p>
+      </div>
+
+      <div class="form-fields hidden" id="fields-login">
+        <label>Correo electrónico
+          <input type="email" placeholder="camila@correo.com">
+        </label>
+        <label>Contraseña
+          <input type="password" placeholder="Tu contraseña">
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+        <p class="form-note"><a href="#">¿Olvidaste tu contraseña?</a></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ MEDIOS DE PAGO ============ -->
+<section class="pagos" id="pagos">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Pagá como quieras</p>
+      <h2>Medios de pago</h2>
+    </div>
+
+    <div class="pagos-grid">
+      <div class="pago-card">
+        <div class="pago-icon">🅿️</div>
+        <h3>Mercado Pago</h3>
+        <p>QR o link de pago, acreditación inmediata.</p>
+      </div>
+      <div class="pago-card">
+        <div class="pago-icon">💳</div>
+        <h3>Tarjeta débito / crédito</h3>
+        <p>Todas las marcas, hasta 3 cuotas sin interés.</p>
+      </div>
+      <div class="pago-card">
+        <div class="pago-icon">🏦</div>
+        <h3>Transferencia bancaria</h3>
+        <p>Recibís el CBU/alias al confirmar tu pedido.</p>
+      </div>
+      <div class="pago-card">
+        <div class="pago-icon">💵</div>
+        <h3>Efectivo al retirar</h3>
+        <p>Reservás online y pagás en el mostrador.</p>
+      </div>
+    </div>
+    <p class="pagos-nota">🔒 Todos los pagos online se procesan de forma segura y encriptada. Nunca vemos ni guardamos los datos completos de tu tarjeta.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section class="testimonios">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Clientes de siempre</p>
+      <h2>Lo que dicen en el barrio</h2>
+    </div>
+    <div class="test-grid">
+      <blockquote class="test-card">
+        <p>“Pido las chipas la noche anterior y las paso a buscar antes de entrar a trabajar. Nunca más hice fila.”</p>
+        <cite>— Marina S., clienta desde 2022</cite>
+      </blockquote>
+      <blockquote class="test-card">
+        <p>“Guardo mi pedido favorito en la cuenta y lo repito con un clic. Para el desayuno del finde es ideal.”</p>
+        <cite>— Rodrigo P., cliente frecuente</cite>
+      </blockquote>
+      <blockquote class="test-card">
+        <p>“Pagué con Mercado Pago y a los cinco minutos ya tenía el aviso de que estaba listo. Muy práctico.”</p>
+        <cite>— Julieta A., nueva clienta</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UBICACIÓN ============ -->
+<section class="ubicacion" id="ubicacion">
+  <div class="wrap ubicacion-inner">
+    <div class="ubicacion-info">
+      <p class="eyebrow">Encontranos</p>
+      <h2>Retiro en mostrador</h2>
+      <dl class="datos">
+        <div><dt>Dirección</dt><dd>Av. San Martín 842, La Calera, Córdoba</dd></div>
+        <div><dt>Horario</dt><dd>Lunes a sábado, 6:00 a 20:30 — Domingos, 7:00 a 13:00</dd></div>
+        <div><dt>Teléfono</dt><dd>0351 400 0000</dd></div>
+        <div><dt>Envíos</dt><dd>Zona La Calera y alrededores, de 9:00 a 19:00</dd></div>
+      </dl>
+    </div>
+    <div class="mapa-placeholder" role="img" aria-label="Mapa de ubicación de la panadería">
+      <span>Av. San Martín 842</span>
+      <small>La Calera, Córdoba</small>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <span class="logo-mark">✷</span>
+        <span class="logo-text">Panadería<em>Al Paso</em></span>
+      </a>
+      <p>Pan de todos los días, horneado a la vista, pensado para tu apuro.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explorar</h4>
+      <a href="#categorias">Categorías</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#cuenta">Mi cuenta</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="#pagos">Medios de pago</a>
+      <a href="#ubicacion">Ubicación y horarios</a>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Cambios y devoluciones</a>
+    </div>
+    <div class="footer-col">
+      <h4>Seguinos</h4>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Panadería Al Paso — La Calera, Córdoba</span>
+    <span>Sitio de demostración diseñado para digitalizar el catálogo y las ventas online.</span>
+  </div>
+</footer>
+
+<!-- ============ CARRITO LATERAL ============ -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+  <div class="cart-drawer-head">
+    <h3>Tu pedido</h3>
+    <button class="cart-close" id="close-cart" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <p class="cart-empty" id="cart-empty">Todavía no agregaste productos. Elegí algo rico del catálogo →</p>
+  </div>
+  <div class="cart-summary">
+    <div class="cart-total-row"><span>Total</span><strong id="cart-total">$0</strong></div>
+    <button class="btn btn-primary btn-block" id="checkout-btn">Ir a pagar</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — Panadería Al Paso</title>
+<meta name="description" content="Catálogo online de Panadería Al Paso: facturas, medialunas, chipas, panes del día y tortas. Elegí y retirá en 15 minutos.">
+<meta name="theme-color" content="#f6eddc">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pie-claro">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header>
+  <a class="marca" href="index.html"><span class="marca-icono" aria-hidden="true">✺</span>Panadería <span>Al Paso</span></a>
+
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="comoFunciona.html">Cómo funciona</a></li>
+      <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+      <li><a href="ubicacion.html">Ubicación</a></li>
+    </ul>
+  </nav>
+
+  <nav aria-label="Cuenta y carrito">
+    <ul>
+      <li><a class="enlace-cuenta" href="cuenta.html#login">Iniciar sesión</a></li>
+      <li><a class="carrito" href="carrito.html" aria-label="Carrito de compras, 0 productos"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.2 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.76L19.5 8H6.2"/><circle cx="9" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg><span class="insignia" aria-hidden="true">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="contenido">
+  <section class="encabezado-pagina" aria-labelledby="cat-titulo">
+    <div class="sobretitulo">Catálogo digital</div>
+    <h1 id="cat-titulo">Pedido de hoy</h1>
+    <p>Cada producto sale con su ticket de despacho: elegís cantidad, lo agregás al pedido y seguís sumando.</p>
+  </section>
+
+  <div id="catalogo">
+    <nav class="filtros" aria-label="Categorías del catálogo">
+      <ul>
+        <li><a href="#catalogo">Todos</a></li>
+        <li><a href="#facturas">Facturas</a></li>
+        <li><a href="#chipas">Chipas</a></li>
+        <li><a href="#panes">Panes</a></li>
+        <li><a href="#dulces">Dulces</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div>
+    <section aria-labelledby="productos-titulo">
+      <h2 class="sr-only" id="productos-titulo">Productos</h2>
+      <div class="productos">
+        <article class="producto" id="facturas">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/medialunas.png" alt="Medialunas de manteca" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>001</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Medialunas de manteca (x6)</h3>
+            <p>Clásicas, dulces y bien hojaldradas.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="3200">$3.200</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="001">
+                <label class="sr-only" for="cant-001">Cantidad de Medialunas de manteca (x6)</label>
+                <input type="number" id="cant-001" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Medialunas de manteca (x6) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/facturas-surtidas.png" alt="Facturas surtidas" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>002</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Facturas surtidas (x12)</h3>
+            <p>Vigilantes, cañoncitos y sacramentos.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="5400">$5.400</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="002">
+                <label class="sr-only" for="cant-002">Cantidad de Facturas surtidas (x12)</label>
+                <input type="number" id="cant-002" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Facturas surtidas (x12) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto" id="chipas">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/chipa.png" alt="Chipas recién horneadas" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>014</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Chipas (x12)</h3>
+            <p>Recién horneadas, con queso de verdad.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="4200">$4.200</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="014">
+                <label class="sr-only" for="cant-014">Cantidad de Chipas (x12)</label>
+                <input type="number" id="cant-014" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Chipas (x12) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/pan-de-queso.png" alt="Pan de queso" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>015</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Pan de queso (x6)</h3>
+            <p>Tiernos por dentro, dorados por fuera.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="2900">$2.900</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="015">
+                <label class="sr-only" for="cant-015">Cantidad de Pan de queso (x6)</label>
+                <input type="number" id="cant-015" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Pan de queso (x6) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto" id="panes">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/pan-frances.png" alt="Pan francés" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>021</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Pan francés (unidad)</h3>
+            <p>Corteza crocante, miga liviana.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="900">$900</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="021">
+                <label class="sr-only" for="cant-021">Cantidad de Pan francés (unidad)</label>
+                <input type="number" id="cant-021" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Pan francés (unidad) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/pan-casero.png" alt="Pan casero" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>022</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Pan casero (x1kg)</h3>
+            <p>El de toda la vida, horneado en molde.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="2600">$2.600</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="022">
+                <label class="sr-only" for="cant-022">Cantidad de Pan casero (x1kg)</label>
+                <input type="number" id="cant-022" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Pan casero (x1kg) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/pan-integral.png" alt="Pan integral de salvado" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>023</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Pan integral de salvado</h3>
+            <p>Con semillas, ideal para el desayuno.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="2400">$2.400</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="023">
+                <label class="sr-only" for="cant-023">Cantidad de Pan integral de salvado</label>
+                <input type="number" id="cant-023" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Pan integral de salvado al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="producto" id="dulces">
+          <div class="producto-imagen">
+            <img src="recursos/imagenes/torta-vainilla.png" alt="Torta de vainilla" width="320" height="240" loading="lazy">
+            <span class="codigo"><span class="sr-only">Código </span>031</span>
+          </div>
+          <div class="producto-cuerpo">
+            <h3>Torta de vainilla (porción)</h3>
+            <p>Bizcochuelo húmedo con crema.</p>
+            <div class="producto-pie">
+              <div class="precio"><data value="1800">$1.800</data></div>
+              <form action="carrito.html" method="get">
+                <input type="hidden" name="producto" value="031">
+                <label class="sr-only" for="cant-031">Cantidad de Torta de vainilla (porción)</label>
+                <input type="number" id="cant-031" name="cantidad" value="1" min="1" max="20" inputmode="numeric">
+                <button class="mas" type="submit" aria-label="Agregar Torta de vainilla (porción) al pedido"><span aria-hidden="true">+</span></button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <section class="banda" aria-labelledby="testi-titulo">
+    <div class="sobretitulo sobretitulo-acento">Clientes de siempre</div>
+    <h2 id="testi-titulo">Lo que dicen en el barrio</h2>
+    <div class="testimonios">
+      <figure>
+        <blockquote><p>“Pido las chipas la noche anterior y las paso a buscar antes de entrar a trabajar. Nunca más hice fila.”</p></blockquote>
+        <figcaption>Marina S., clienta desde 2022</figcaption>
+      </figure>
+      <figure>
+        <blockquote><p>“Guardo mi pedido favorito en la cuenta y lo repito con un clic. Para el desayuno del finde es ideal.”</p></blockquote>
+        <figcaption>Rodrigo P., cliente frecuente</figcaption>
+      </figure>
+      <figure>
+        <blockquote><p>“Pagué con Mercado Pago y a los cinco minutos ya tenía el aviso de que estaba listo. Muy práctico.”</p></blockquote>
+        <figcaption>Julieta A., nueva clienta</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="pie-grid">
+    <div class="pie-marca">
+      <a class="marca" href="index.html"><span class="marca-icono" aria-hidden="true">✺</span>Panadería <span>Al Paso</span></a>
+      <p>Pan de todos los días, horneado a la vista, pensado para tu apuro.</p>
+    </div>
+
+    <nav aria-label="Explorar">
+      <h2>Explorar</h2>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comoFunciona.html">Cómo funciona</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="cuenta.html">Mi cuenta</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Ayuda">
+      <h2>Ayuda</h2>
+      <ul>
+        <li><a href="carrito.html#pagos">Medios de pago</a></li>
+        <li><a href="ubicacion.html">Ubicación y horarios</a></li>
+        <li><a href="tel:+543514000000">0351 400 0000</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Redes sociales">
+      <h2>Seguinos</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://wa.me/543514000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="pie-base">
+    <p>© 2026 Panadería Al Paso — La Calera, Córdoba</p>
+    <p>Sitio de demostración diseñado para digitalizar el catálogo y las ventas online.</p>
+  </div>
+</footer>
+</body>
+</html>
