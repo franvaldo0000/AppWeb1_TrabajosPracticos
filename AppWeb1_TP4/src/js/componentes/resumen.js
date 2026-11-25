@@ -1,8 +1,8 @@
 /**
  * componentes/resumen.js
  * ------------------------------------------------------------------
- * Componente reutilizable: dibuja el "Resumen del pedido" (líneas y total).
- * Lo usan los pasos de entrega y de pago.
+
+* Componente reutilizable: dibuja el "Resumen del pedido" (líneas y total).
  */
 (function () {
   'use strict';
