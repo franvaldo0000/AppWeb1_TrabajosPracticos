@@ -37,7 +37,9 @@
     <p>Cada producto sale con su ticket de despacho: elegís cantidad, lo agregás al pedido y seguís sumando.</p>
   </section>
 
-  <div id="catalogo">
+  <section id="catalogo" aria-labelledby="catalogo-titulo">
+    <h2 class="sr-only" id="catalogo-titulo">Catálogo de productos</h2>
+
     <nav class="filtros" aria-label="Categorías del catálogo">
       <ul>
         <li><a href="#catalogo">Todos</a></li>
@@ -47,9 +49,7 @@
         <li><a href="#dulces">Dulces</a></li>
       </ul>
     </nav>
-  </div>
 
-  <div>
     <section aria-labelledby="productos-titulo">
       <h2 class="sr-only" id="productos-titulo">Productos</h2>
       <div class="productos">
@@ -72,6 +72,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto">
           <div class="producto-imagen">
             <img src="recursos/imagenes/facturas-surtidas.png" alt="Facturas surtidas" width="320" height="240" loading="lazy">
@@ -91,6 +92,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto" id="chipas">
           <div class="producto-imagen">
             <img src="recursos/imagenes/chipa.png" alt="Chipas recién horneadas" width="320" height="240" loading="lazy">
@@ -110,6 +112,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto">
           <div class="producto-imagen">
             <img src="recursos/imagenes/pan-de-queso.png" alt="Pan de queso" width="320" height="240" loading="lazy">
@@ -129,6 +132,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto" id="panes">
           <div class="producto-imagen">
             <img src="recursos/imagenes/pan-frances.png" alt="Pan francés" width="320" height="240" loading="lazy">
@@ -148,6 +152,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto">
           <div class="producto-imagen">
             <img src="recursos/imagenes/pan-casero.png" alt="Pan casero" width="320" height="240" loading="lazy">
@@ -167,6 +172,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto">
           <div class="producto-imagen">
             <img src="recursos/imagenes/pan-integral.png" alt="Pan integral de salvado" width="320" height="240" loading="lazy">
@@ -186,6 +192,7 @@
             </div>
           </div>
         </article>
+
         <article class="producto" id="dulces">
           <div class="producto-imagen">
             <img src="recursos/imagenes/torta-vainilla.png" alt="Torta de vainilla" width="320" height="240" loading="lazy">
@@ -207,7 +214,7 @@
         </article>
       </div>
     </section>
-  </div>
+  </section>
 
   <section class="banda" aria-labelledby="testi-titulo">
     <div class="sobretitulo sobretitulo-acento">Clientes de siempre</div>
@@ -227,7 +234,6 @@
       </figure>
     </div>
   </section>
-
 </main>
 
 <footer>

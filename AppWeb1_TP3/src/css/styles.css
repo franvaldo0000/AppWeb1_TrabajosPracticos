@@ -399,7 +399,11 @@ main > .encabezado-pagina {
   color: var(--crema-clara);
 }
 .productos { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+
+/* Anclas internas del catálogo (incluye #catalogo y cada producto) */
+#catalogo,
 .producto[id] { scroll-margin-top: 6rem; }
+
 .producto {
   display: flex;
   flex-direction: column;
